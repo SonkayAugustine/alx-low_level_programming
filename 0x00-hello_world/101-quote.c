@@ -1,12 +1,12 @@
 #include <stdio.h>
 /**
- *main- prins the  quote "Art is useful"
- *Warnings are allowed
- *Return zero or otherwise no-zero
+ * main - prints the  quote "Art is useful"
+ *
+ * Return: 1
  */
-int write(int filedes, const char *buf unsigned int byte);
-int main(int argc, char** argv)
+
+int main(void)
 {
-  write(1, "and that piece of art is useful'"' - Dora Korpar, 2015-10-19\n", 27);
+char str1[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
 return (1);
 }
