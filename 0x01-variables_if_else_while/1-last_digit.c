@@ -1,13 +1,14 @@
-#include <stdlib.h>
+emace0;276;0c#include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
 
 /**
  * main - Entry point
- *
+ * LastDigit - the string of numbers
+ * num - the last digit of the string
  * Return: Always 0 (Success)
  */
-int Last_Digit(int num);
+int LastDigit(int num);
 int main(void)
 
 {
