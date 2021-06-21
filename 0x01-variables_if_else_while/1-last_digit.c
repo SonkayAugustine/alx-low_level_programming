@@ -18,7 +18,7 @@ n = rand() - RAND_MAX / 2;
 if (n > 5)
 printf("%d%10 and is greater than 5\n", n);
 
-else (n == 0)
+else(n == 0)
 printf("%d%10 and is 0\n", n);
 
 else if ((n < 6) && (n != 0))
