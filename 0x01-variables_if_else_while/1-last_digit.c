@@ -8,7 +8,7 @@ emace0;276;0c#include <stdlib.h>
  * num - the last digit of the string
  * Return: Always 0 (Success)
  */
-int LastDigit(int num);
+int Last_Digit(int num);
 int main(void)
 
 {
