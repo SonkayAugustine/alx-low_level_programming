@@ -1,8 +1,9 @@
 #include <stdio.h>
+
 /**
- *main - prints sizeof data types on the computer
- *Warnings are allowed
- *Return 0 if successful or otherwise non-zero
+ * main - Entry point
+ * 
+ * Return: Always 0 (success)
  */
 
 int main(void)
