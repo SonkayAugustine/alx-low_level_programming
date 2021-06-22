@@ -1,12 +1,11 @@
 #include "holberton.h"
-#include <stdio.h>
-#include <stdlib.h>
 
 /**
- * _putchar - Print the word "holberton"
+ * main - Print the word "holberton"
  * followed by a new line
  * Return: Always 0 (success)
  */
+
 int main(void)
 {
 _putchar('H');
