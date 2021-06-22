@@ -7,7 +7,7 @@
  * followed by a new line
  * Return: Always 0 (success)
  */
-int _putchar(void)
+int _putchar(char c)
 {
 putchar('H');
 putchar('o');
