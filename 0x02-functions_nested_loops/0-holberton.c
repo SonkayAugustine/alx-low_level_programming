@@ -3,12 +3,12 @@
 #include <stdlib.h>
 
 /**
- * main - Print the word "holberton"
+ * _putchar - Print the word "holberton"
  * followed by a new line
  * Return: Always 0 (success)
  */
 
-int main(void)
+int _putchar(void)
 {
 _putchar('H');
 _putchar('o');
