@@ -1,3 +1,4 @@
+
 #include "holberton.h"
 #include <stdio.h>
 #include <stdlib.h>
@@ -7,7 +8,7 @@
  * followed by a new line
  * Return: Always 0 (success)
  */
-int _putchar(char c)
+int _putchar()
 {
 putchar('H');
 putchar('o');
