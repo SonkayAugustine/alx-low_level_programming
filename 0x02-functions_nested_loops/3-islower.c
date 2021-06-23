@@ -2,7 +2,7 @@
 
 /**
  * _islower - Entry point
- * (int c) - parameter passed
+ * @c: displays lowercase letters
  * Return: 0
  */
 

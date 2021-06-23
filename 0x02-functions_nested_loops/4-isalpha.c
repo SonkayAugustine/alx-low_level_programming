@@ -2,7 +2,7 @@
 
 /**
  * _isalpha - Entry point
- *
+ * @c: displays letters in the alphabet
  * Return: 0
  */
 
