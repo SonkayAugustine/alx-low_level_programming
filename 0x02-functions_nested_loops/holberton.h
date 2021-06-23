@@ -1,2 +1,1 @@
-void print_alphabet(void);
-
+int print_sign(int n);
