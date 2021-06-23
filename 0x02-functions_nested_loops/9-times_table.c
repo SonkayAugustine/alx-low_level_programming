@@ -9,9 +9,9 @@
 void times_table(void)
 {
 int i, j, product, product_first_digit, product_last_digit;
-for (i = 0; i < 9; i++)
+for (i = 0; i <= 9; i++)
 {
-for (j = 0; j < 9; j++)
+for (j = 0; j <= 9; j++)
 {
 product = i * j;
 product_first_digit = product / 10;
@@ -31,5 +31,4 @@ _putchar(' ');
 }
 }
 }
-_putchar('\n');
 }
