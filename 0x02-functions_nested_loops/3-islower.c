@@ -8,6 +8,7 @@
 
 int _islower(int)
 {
+int c;
 if (c >= 97)
 {
 return (1);
