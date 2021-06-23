@@ -8,7 +8,7 @@
 
 int main(void)
 {
-char ch = "abcdefghjiklmnopqrstuvwxyz";
+char ch[] = "abcdefghjiklmnopqrstuvwxyz";
 _putchar(ch);
 _putchar('\n');
 return (0);
