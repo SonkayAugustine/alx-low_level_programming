@@ -2,12 +2,15 @@
 
 /**
  * _abs - Entry point
- * @int: integer passed
+ * @N: Any integer passed
  * Return: 0
  */
 
-int _abs(int)
+int _abs(int N)
 {
-int const mask = n >> (sizeof(int) * CHAR_BIT - 1);
-return ((n ^ mask) - mask);
+if (N < 0)
+{
+N = (-1) * N;
+}
+return (0);
 }
