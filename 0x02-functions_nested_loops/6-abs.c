@@ -2,15 +2,15 @@
 
 /**
  * _abs - Entry point
- * @N: Any integer passed
+ * @n: the int to check
  * Return: 0
  */
 
-int _abs(int N)
+int _abs(int n)
 {
-if (N < 0)
+if (n >= 0)
 {
-N = (-1) * N;
+return (n);
 }
-return (0);
+return (-n);
 }
