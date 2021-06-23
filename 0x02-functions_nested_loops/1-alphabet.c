@@ -1,15 +1,15 @@
 #include "holberton.h"
 
 /**
- * main - check the code for ALX School students.
+ * print_alphabet - Entry point
  *
- * Return: Always 0.
+ * Return: 0
  */
 
-int main(void)
+void print_alphabet(void)
 {
-char ch[] = "abcdefghjiklmnopqrstuvwxyz";
-_putchar(ch);
-_putchar('\n');
+char c;
+for (c = 'a'; c <= 'z', ++c)
+_putchar(c);
 return (0);
 }

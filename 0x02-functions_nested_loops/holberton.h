@@ -1,1 +1,2 @@
-int print_sign(int n);
+int _putchar(char);
+void print_alphabet(void);
