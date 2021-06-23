@@ -1,4 +1,4 @@
-#include "holberton.h"
+m#include "holberton.h"
 
 /**
  * times_table - Entry point
@@ -8,27 +8,31 @@
 
 void times_table(void)
 {
-int i, j, product, product_first_digit, product_last_digit;
+int i, j, k;
 for (i = 0; i < 10; i++)
 {
 for (j = 0; j < 10; j++)
 {
-product = i * j;
-product_first_digit = product / 10;
-product_last_digit = product % 10;
-
-if (i != 0)
+k = i * j;
+if (j == 0)
 {
-_putchar(product_first_digit == 0 ? ' ' : product_first_digit + '0');
-_putchar(product_last_digit + '0');
-if (j == 9)
-_putchar('\n');
-else
+_putchar(k + '0');
+}
+if (k < 10 && j != 0)
 {
 _putchar(',');
 _putchar(' ');
+_putchar(' ');
+_putchar(k + '0');
+}
+else if (k >= 10)
+{
+_putchar(',');
+_putchar(' ');
+_putchar((k / 10) + '0');
+_putchar((k % 10) + '0');
 }
 }
-}
+_putchar('\n');
 }
 }
