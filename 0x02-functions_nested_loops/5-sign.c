@@ -3,11 +3,10 @@
 /**
  * print_sign - Entry point
  *
- * @n: Number to pass to print_sign()
-function
-*
-* Return: Always 0
-*/
+ * @n: Number to pass to print_sign() function
+ *
+ * Return: Always 0
+ */
 
 int print_sign(int n)
 {
@@ -26,7 +25,7 @@ return (-1);
 else
 {
 _putchar(48);
-return(0);
+return (0);
 }
 
 }
