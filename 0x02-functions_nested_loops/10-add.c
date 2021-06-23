@@ -6,12 +6,7 @@
  * Return: 0
  */
 
-int add(int, int)
+int add(int i, int j)
 {
-int c, i;
-
-_putchar(c + i);
-_putchar('\n');
-
-return (0);
+return a + b;
 }
