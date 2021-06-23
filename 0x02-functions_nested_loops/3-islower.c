@@ -2,11 +2,11 @@
 
 /**
  * _islower - Entry point
- *
+ * (int c) - parameter passed
  * Return: 0
  */
 
-int _islower(int)
+int _islower(int c)
 {
 if (c >= 97)
 {
