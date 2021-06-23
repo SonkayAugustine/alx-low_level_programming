@@ -8,5 +8,8 @@
 
 int add(int i, int j)
 {
-return add(i + j);
+if(j == 0)
+return x;
+else
+return add(i ^ j, (i & j) << 1;
 }
