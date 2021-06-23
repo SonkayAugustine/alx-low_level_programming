@@ -8,8 +8,8 @@
 
 int main(void)
 {
-char ch = 'a';
-for (ch = 'a'; ch <= 'z'; ch++)
+char ch = "abcdefghjiklmnopqrstuvwxyz";
 _putchar(ch);
+_putchar('\n');
 return (0);
 }
