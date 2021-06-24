@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include "holberton.h"
 
 /**
  * main - casuses an infinite loop
@@ -9,14 +8,17 @@
 int main(void)
 {
 int i;
+
 printf("Infinite loop incoming :(\n");
 /**
  * i = 0; - integer to be checked
+
  * while (i < 10)
  * {
  * putchar(i);
  * }
  */
 printf("Infinite loop avoided! \\o/\n");
+
 return (0);
 }
