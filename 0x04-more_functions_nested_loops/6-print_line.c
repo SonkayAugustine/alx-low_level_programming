@@ -2,7 +2,7 @@
 
 /**
  * print_line - Entry point
- *
+ * @n: integer
  * Return: always 0.
  */
 
