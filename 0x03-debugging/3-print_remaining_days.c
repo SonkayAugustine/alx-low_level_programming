@@ -2,7 +2,7 @@
 #include "holberton.h"
 
 /**
- * print_remaining_days - takes a date and prints how many days are left int the year, taking leaps into a * ccount
+ * print_remaining_days - takes a date
  * @month: month in number format
  * @day: day of month
  * @year: year
