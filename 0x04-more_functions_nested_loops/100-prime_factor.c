@@ -10,7 +10,7 @@ int main(void)
 {
 long int n = 10;
 int div = 2;
-long in maxfactor;
+long int maxfactor;
 
 while (1)
 {
