@@ -8,19 +8,13 @@
 
 void print_triangle(int size)
 {
-int row, col, col2;
+int i, j;
 if (size <= 0)
 _putchar('\n');
-for (row = 1; row <= size; row++)
+for (i = 0; i <= size; i++)
 {
-for (col = row; col < size; col++)
-{
-_putchar(' ');
-}
-for (col2 = 1; col2 <= row; col2++)
-{
-_putchar('#');
-}
-_putcharr('\n');
+for (j = 0; j < size; j++)
+_putchar(j <= (size - i - 2) ? ' ' : '#');
+_putchar('\n');
 }
 }
