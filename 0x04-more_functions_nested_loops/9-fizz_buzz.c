@@ -8,18 +8,17 @@
 
 int main(void)
 {
-int num;
-for (num = 1; num <= 100; num++)
-printf(" ");
-if (num % 3 && num % 5 == 0)
-printf("FizzBuzz");
-else if (num % 5 == 0)
+int i;
+for (i = 1; i <= 100; i++)
+{
+if (i % 15 == 0)
+printf("FizzBuzz\t");
+else if ((i % 5) == 0)
 printf("Buzz");
-else if (num % 3 == 0)
-printf("Fizz");
+else if ((i % 3) == 0)
+printf("Fizz\t");
 else
-printf("%d", num);
+printf("%d\t", i);
 }
-printf("\n");
 return (0);
 }
