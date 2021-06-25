@@ -15,12 +15,13 @@ while (i < size)
 {
 while (s < size)
 {
-_putchar(#);
+_putchar('#');
 s++;
 }
 _putchar('\n');
 s = 0;
 i++;
+}
 }
 else
 {
