@@ -1,4 +1,5 @@
 #include "holberton.h"
+#include <stdio.h>
 
 /**
  * print_square - Entry point
@@ -28,4 +29,4 @@ else
 _putchar('\n');
 }
 }
-}
+
