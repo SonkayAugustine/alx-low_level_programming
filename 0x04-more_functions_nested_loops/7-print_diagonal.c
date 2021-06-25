@@ -8,14 +8,14 @@
 
 void print_diagonal(int n)
 {
-int row;
-int col;
+int i, j;
 
 if (n <= 0)
 _putchar('\n');
-for (row = 1; row <= n; row++)
+for (i = 1; i <= n; i++)
 {
-for (col = 1; col < row; col++)
+for (j = 1; j < i; j++)
+{
 _putchar(' ');
 }
 _putchar('\\');
