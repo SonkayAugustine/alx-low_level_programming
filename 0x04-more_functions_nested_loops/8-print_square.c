@@ -22,9 +22,9 @@ _putchar('\n');
 s = 0;
 i++;
 }
-}
 else
 {
 _putchar('\n');
+}
 }
 }
