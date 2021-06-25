@@ -3,7 +3,7 @@
 /**
  * print_triangle - Entry point
  * @size: the size of line
- * Return: 0 
+ * Return: 0
  */
 
 void print_triangle(int size)
