@@ -2,29 +2,27 @@
 
 /**
  * leet - encode a string into 1337
- * @s: the string to encode
+ * @n: the string to encode
  *
  * Return: pointer to the encoded string
  */
 
-char *leet(char *s)
+char *leet(char *n)
 {
-char *c;
-char map[15] = {
-'a', 'A', '4',
-'e', 'E', '3',
-'o', 'O', '0',
-'t', 'T', '7',
-'l', 'L', '1'
-};
-int i;
-for (c = s; *c; ++c)
+int i, x;
+int find[] = {'a', 'A', 'e', 'E', 'o', 'O', 't', 'T', 'l', 'L'};
+int replacer[] = {'4', '3', '0', '7', '1'};
+
+for (i = 0; n[i] != '\0'; i++)
 {
-for (i = 0; i < 15; 1 += 3)
+for (x = 0; x <= 9; x++)
 {
-if (*c == map[i] || *c == map[i + 1])
-*c = map[i + 2];
+if (n[i] == find[x])
+{
+n[i] = replacer[x / 2];
+x = 9;
 }
 }
-return (s);
+}
+return (n);
 }
