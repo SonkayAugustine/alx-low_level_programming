@@ -1,5 +1,5 @@
 #include <stdio.h>
-/* main - entry point */
+
 int main(void)
 {
 int n;
@@ -16,7 +16,8 @@ p = &n;
    * - only one statement
    * - you are not allowed to code anything else in this of code
    */
-p[45] = 98;
+n = 8;
+/* ...so that it print 98\n */
 printf("a[2] = %d\n", a[2]);
 return (0);
 }
