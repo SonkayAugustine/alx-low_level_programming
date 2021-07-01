@@ -10,22 +10,24 @@
 
 char *cap_string(char *s)
 {
-char *ws = " \t\n,;.!?\"(){}"
-int i;
-int j;
-
-for (i = 0, j = 0; s[i]; ++i)
+int i, x;
+int cap = 32;
+int sprtrs[] = {',', ';', '.', '?', '"', '(', ')', '{', '}', ' ', '\n', '\t'};
+for (i = 0; n[i] != '\0'; i++)
 {
-if ('a' <= s[i] && s[i] <= 'z')
+if (n[i] >= 'a' && n[i] <= 'Z')
 {
-if (i)
+n[i] = n[i] - cap;
+}
+cap = 0;
+for (x = 0; x <= 12; x++)
 {
-for (j = 0; ws[j] && ws[j] != s[i - 1];
-;
+if (n[i] == sprtrs[x])
+{
+x = 12;
+cap = 32;
 }
-if (ws[j])
-s[i] -= ('a' - 'A');
 }
 }
-return (s);
+return (n);
 }
