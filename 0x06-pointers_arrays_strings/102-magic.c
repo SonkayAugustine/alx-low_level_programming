@@ -20,7 +20,7 @@ p = &n;
    * - only one statement
    * - you are not allowed to code anything else in this of code
    */
-n = 98;
+ *(p + 5) = 98;
 /* ...so that it print 98\n */
 printf("a[2] = %d\n", a[2]);
 return (0);
