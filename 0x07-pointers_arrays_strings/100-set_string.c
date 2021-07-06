@@ -1,9 +1,9 @@
 #include "holberton.h"
 #include <stdio.h>
 /**
- * set_string - Entry point
- * @s: double pointer
- * @to: pointer to be pointed to.
+ * set_string - sets the value of a pointer to a char
+ * @s: pointer to pointer
+ * @to: char
  * Return: No return
  */
 
