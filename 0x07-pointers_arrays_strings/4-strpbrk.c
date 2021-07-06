@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * _strpbrk - searches a string for any set of bytes
+ * _strpbrk - searches a string for any of a set of bytes
  * @s: the string
  * @accept: chars to find
  *
@@ -10,22 +10,23 @@
  */
 char *_strpbrk(char *s, char *accept)
 {
-unsigned int i;
-unsigned int j;
-char *add = NULL;
+int i, j;
+char *p;
 
-for (i = 0; accept[i] != '\0'; i++)
+i = 0;
+while (s[i] != '\0')
 {
-for (j = 0; s[j] != '\0'; j++)
+j = 0;
+while (accept[j] != '\0')
 {
-if (s[j] == accept[i])
+if (accept[j] == s[i])
 {
-if (add == NULL)
-add = &(s[j]);
-if (&(s[j] < add)
-add = &(s[j]);
+p = &s[i];
+return (p);
 }
+j++;
 }
+i++;
 }
-return (add);
+return (0);
 }
