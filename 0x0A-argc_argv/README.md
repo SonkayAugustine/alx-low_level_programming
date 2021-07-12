@@ -1,0 +1,1 @@
+The files in the document are written using different functions to display or write programs under the argc and argv arguments
