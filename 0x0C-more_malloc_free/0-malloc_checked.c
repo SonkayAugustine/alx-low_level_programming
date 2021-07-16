@@ -1,5 +1,4 @@
-#include "holberton.h
-#include <stdio.h>
+#include "holberton.h"
 #include <stdlib.h>
 
 /**
