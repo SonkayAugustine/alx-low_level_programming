@@ -54,6 +54,7 @@ return (my_dog);
 char *_strcpy(char *dest, char *src)
 {
 int i = 0;
+
 while (*(src + i) != '\0')
 {
 *(dest + i) = *(src + i);
@@ -66,11 +67,13 @@ return (dest);
 /**
  * _strlen - Determines the lenght of a string
  * @s: Set of characters
- * * Return: Nothing
+ *
+ * Return: Nothing
  */
 int _strlen(char *s)
 {
 int i = 0;
+
 while (*(s + i) != '\0')
 {
 i++;
