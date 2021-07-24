@@ -54,14 +54,14 @@ void print_all(const char * const format, ...)
 char *separator = "";
 int i, j = 0;
 va_list valist;
-datatype choice[] = {
-{'c', print_char},
+
+datatype choice[] = { {'c', print_char},
 {'i', print_int},
 {'f', print_float},
 {'s', print_string},
-{'\0', NULL}
-};
- /**
+{'\0', NULL} };
+
+/**
   * iterate format; if datatype matched,
   * access function via struct
   */
