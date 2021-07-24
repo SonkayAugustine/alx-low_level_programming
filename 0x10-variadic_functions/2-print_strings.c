@@ -7,7 +7,7 @@
  * @n: amount of arguments in list
  */
 
-void print_strings(const char *separator, const unsigne int n, ...)
+void print_strings(const char *separator, const unsigned int n, ...)
 {
 va_list valist;
 unsigned int i;
