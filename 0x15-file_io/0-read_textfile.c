@@ -1,29 +1,30 @@
 #include "main.h"
 /**
- * create_file - Entry Point
+ * read_textfile - Entry Point
  * @filename: file name
- * @text_content: null terminated string to write
- * Return: 1
+ * @letters: size
+ * Return: 0
  */
-int create_file(const char *filename, char *text_content)
+ssize_t read_textfile(const char *filename, size_t letters)
 {
-int file, i = 0;
+int file, rd, wr;
+char *buf;
 if (filename == NULL)
-return (-1);
-file = open(filename, O_CREAT | O_TRUNC | O_WRONLY, 0600);
+return (0);
+file = open(filename, O_RDONLY);
 if (file == -1)
-return (-1);
-while (text_content[i])
-i++;
-if (text_content == NULL)
-{
+return (0);
+buf = malloc(sizeof(char) * letters + 1);
+if (buf == NULL)
+return (0);
+rd = read(file, buf, letters);
+if (rd == -1)
+return (0);
+buf[letters] = '\0';
+wr = write(1, buf, rd);
+if (wr == -1)
+return (0);
 close(file);
-return (-1);
-}
-else
-{
-write(file, text_content, i);
-}
-close(file);
-return (1);
+free(buf);
+return (wr);
 }
