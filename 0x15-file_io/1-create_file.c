@@ -1,19 +1,6 @@
 #include "main.h"
 
 /**
- * _strlen - find length of string
- * @str: string
- * Return: length
- */
-int _strlen(char *str)
-{
-int len;
-for (len = 0; str[len] != '\0'; len++)
-;
-return (len);
-}
-
-/**
  * create_file - Entry Point
  * @filename: file name
  * @text_content: null terminated string to write
@@ -21,23 +8,22 @@ return (len);
  */
 int create_file(const char *filename, char *text_content)
 {
-int fd, bytes_wrote;
-if (!filename)
+int fd, bytes_wrote, len;
+if (filename == NULL)
 return (-1);
 fd = open(filename, O_CREAT | O_TRUNC | O_WRONLY, 0600);
 if (fd == -1)
 return (-1);
-if (!text_content)
+if (text_content != NULL)
 {
-close(fd);
-return (1);
-}
+for (len = 0; text_content[len] != '\0'; len++)
+;
 
-bytes_wrote = wrote = write(fd, text_content, _strlen(text_content));
+bytes_wrote = write(fd, text_content, len);
 
-if (bytes_wrote == -1 || bytes_wrote != _strlen(text_content))
+if (bytes_wrote == -1)
 {
-close(fd);
+write(STDOUT_FILENO, "fails", 6)
 return (-1);
 }
 
