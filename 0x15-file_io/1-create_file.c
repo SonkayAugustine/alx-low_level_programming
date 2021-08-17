@@ -18,7 +18,8 @@ if (fd == -1)
 return (-1);
 if (text_content != NULL)
 {
-for (len = 0; text_content[len] != '\0'; len++);
+for (len = 0; text_content[len] != '\0'; len++)
+;
 
 bytes_wrote = wrote = write(fd, text_content, len);
 
