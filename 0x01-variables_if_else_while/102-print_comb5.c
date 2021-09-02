@@ -6,25 +6,40 @@
  */
 int main(void)
 {
-int i, j, k;
-for (i = 0; i < 10; i++)
+int i, j, k, h;
+i = 0;
+j = i;
+while (i < 10)
 {
-for (j = i + 1; j < 10; j++)
+while (j < 10)
 {
-for (k = j + 1; k < 10; k++)
+k = i;
+h = j + 1;
+while (k < 10)
+{
+while (h < 10)
 {
 putchar(i + '0');
 putchar(j + '0');
+putchar(' ');
 putchar(k + '0');
-if ((i == 7) && (j == 8) && (k == 9))
+putchar(h + '0');
+if ((i == 9) && (j == 8) && (k == 9) && (h == 9))
 ;
 else
 {
 putchar(',');
 putchar(' ');
 }
+h++;
 }
+h = 0;
+k++;
 }
+j++;
+}
+j = 0;
+i++;
 }
 putchar('\n');
 return (0);
