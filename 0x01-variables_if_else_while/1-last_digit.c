@@ -5,7 +5,7 @@
 /**
  * main - Entry point
  * LastDigit - the string of numbers
- * num - the last digit of the string
+ * @num: the last digit of the string
  * Return: Always 0 (Success)
  */
 int Last_Digit(int num);
