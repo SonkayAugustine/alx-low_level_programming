@@ -1,11 +1,7 @@
 #!/usr/bin/python3
-if __name__ == " __main__":
+if __name__ == "__main__":
     import sys
     import hidden_4
-    li = dir(hidden_4)
-
-    for i in range(0, len(li)):
-        if li[i][0] == '_' and li[i][1] == '_':
-            continue
-        else:
-            print("{}".format(li))
+    for n in dir(hidden_4):
+        if n[:2] != "__":
+            print(n)
