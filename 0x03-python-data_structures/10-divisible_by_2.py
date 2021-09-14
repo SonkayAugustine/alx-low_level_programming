@@ -1,7 +1,5 @@
 #!/usr/bin/python3
 def divisble_by_2(my_list=[]):
-    if not in my_list:
-        return my_list
     new_list = my_list[:]
     for i in range(0, len(my_list)):
         if my_list[i] % 2 == 0:
