@@ -1,24 +1,29 @@
 #!/usr/bin/python3
 if __name__ == "__main__":
     from sys import argv
-    from calculator_1 import add, sub, mul, div
-    argv = sys.argv[1:]
-    argv_count = len(argv)
-    operators = ["+", "-", "*", "/"]
-    if argv_count is not 3:
-        print("Usage: ./100-my_calculator.py <a> <operator> <b>")
-        exit(1)
-    elif sys.argv[2] not in operators:
-        print("Unknown operator. Available operators: +, -, * and /")
-        exit(1)
-    else:
+    from calculator_1 import *
+    num_of_args = len(sys.argv[1:])
+
+    operators = {
+        "+": add(a, b),
+        "-": sub(a, b),
+        "*": mul(a, b),
+        "/": div(a, b)}
+
+    def driver():
         a = int(sys.argv[1])
+        op = sys.argv[2]
         b = int(sys.argv[3])
-    if sys.argv[2] is "+":
-        print("{:d} + {:d} = {:d}".format(a, b, add(a, b)))
-    elif sys.argv[2] is "-":
-        print("{:d} - {:d} = {:d}".format(a, b, sub(a, b)))
-    elif sys.argv[2] is "*":
-        print("{:d} * {:d} = {:d}".format(a, b, mul(a, b)))
-    elif sys.argv[2] is "/":
-        print("{:d} / {:d} = {:d}".format(a, b, div(a, b)))
+
+        if op not in operators.keys():
+            print('Unknown operator. Available operators: +, -, * and /')
+        else:
+            result = operators(a, b)
+            print('{:d} {:s} {:d} = {:d}'.format(a, op, b, result))
+            return result
+
+    if num_of_rags != 3:
+        print('Usage: ./100-my_calculator.py <a> <operator> <b>')
+        sys.exit(1)
+    else:
+        driver()
