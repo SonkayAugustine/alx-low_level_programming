@@ -1,1 +1,0 @@
-This file about how other functions like concatenation, copy, comparing etc. of strings can be done.

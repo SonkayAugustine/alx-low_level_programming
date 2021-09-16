@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ## Higher Level Programming - Python
 
 
@@ -40,6 +39,3 @@
 - 0x12-javascript-warm_up
 
 - 0x13-javascript_objects_scopes_closures
-=======
-No README.md, no knowledge sharing :-(# alx-sytem_engineering-devops
->>>>>>> 82b448a6488a4b1f14e0003db36bb030a1051367
