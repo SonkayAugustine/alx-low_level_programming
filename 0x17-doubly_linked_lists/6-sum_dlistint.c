@@ -2,7 +2,7 @@
 /**
  * sum_dlistint - returns the nth node of a dlistint_t linked list
  * @head: head pointer
- * 
+ *
  * Return: pointer to node; if the node does not exist, return NULL
  */
 int sum_dlistint(dlistint_t *head)
