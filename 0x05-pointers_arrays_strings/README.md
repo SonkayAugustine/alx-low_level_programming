@@ -1,0 +1,1 @@
+This page is describing how and what techniques I used to solved challeges on Pointers, Strings and Arrays
