@@ -1,45 +1,56 @@
-<<<<<<< HEAD
-## Higher Level Programming - Python
+## Low Level Programming (ALX School)
 
+-0x00-hello_world
 
+-0x00-shell_basics
 
-- 0x00-python-hello_world
+-0x01-shell_permissions
 
-- 0x01-python-if_else_loops_functions
+-0x01-variables_if_else_while
 
-- 0x02-python-import_modules
+-0x02-functions_nested_loops
 
-- 0x03-python-data_structures
+-0x02-shell_redirections
 
-- 0x04-python-more_data_structures
+-0x03-debugging
 
-- 0x05-python-exceptions
+-0x03-shell_variables_expansions
 
-- 0x06-python-test_driven_development
+-0x04-more_functions_nested_loops
 
-- 0x07-python-classes
+-0x05-pointers_arrays_strings
 
-- 0x08-python-more_classes
+-0x06-pointers_arrays_strings
 
-- 0x09-python-everything_is_object
+-0x07-pointers_arrays_strings
 
-- 0x0A-python-inheritance
+-0x08-recursion
 
-- 0x0B-python-input_output
+-0x09-static_libraries
 
-- 0x0D-SQL_introduction
+-0x0A-argc_argv
 
-- 0x0E-SQL_more_queries
+-0x0B-malloc_free
 
-- 0x0F-python-object_relational_mapping
+-0x0C-more_malloc_free
 
-- 0x10-python-network_0
+-0x0D-preprocessor
 
-- 0x11-python-network_1
+-0x0E-structures_typedef
 
-- 0x12-javascript-warm_up
+-0x0F-function_pointers
 
-- 0x13-javascript_objects_scopes_closures
-=======
-No README.md, no knowledge sharing :-(# alx-sytem_engineering-devops
->>>>>>> 82b448a6488a4b1f14e0003db36bb030a1051367
+-0x10-variadic_functions
+
+-0x12-singly_linked_lists
+
+-0x13-more_singly_linked_lists
+
+-0x14-bit_manipulation
+
+-0x15-file_io
+
+-0x17-doubly_linked_lists
+
+-printf
+
