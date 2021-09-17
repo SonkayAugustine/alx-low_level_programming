@@ -21,7 +21,7 @@ if (index == 0)
 free(removeNode);
 return (1);
 }
-if (i == index -1)
+if (i == index - 1)
 {
 removeNode = tmp->next;
 tmp->next = removeNode->next;
