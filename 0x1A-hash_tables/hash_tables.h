@@ -28,7 +28,7 @@ struct hash_node_s *next;
  * Each cell of this array is a pointer to the first node of a linked list,
  * because we want our HashTable to use a Chaining collision handling
  */
-typedef struct hash_tables_s
+typedef struct hash_table_s
 {
 unsigned long int size;
 hash_node_t **array;
@@ -43,6 +43,7 @@ hash_node_t **array;
  * @value: The value corresponding to a key
  * @next: A pointer to the next node of the List
  * @snext: A pointer to the next element of the sorted linked list
+ * @sprev: A pointer to the previous element of the sorted list
  */
 typedef struct shash_node_s
 {
@@ -69,7 +70,6 @@ shash_node_t **array;
 shash_node_t *shead;
 shash_node_t *stail;
 } shash_table_t;
-
 
 
 hash_table_t *hash_table_create(unsigned long int size);
