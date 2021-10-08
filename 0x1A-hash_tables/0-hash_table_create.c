@@ -14,11 +14,11 @@ ht = malloc(sizeof(hash_table_t));
 if (ht == NULL)
 return (NULL);
 ht->size = size;
-ht->array = calloc(size, sizeof(hash_node_t ));
+ht->array = calloc(size, sizeof(hash_node_t));
 if (ht->array == NULL)
 {
 free(ht);
 return (NULL);
 }
- return (ht);
+return (ht);
 }
