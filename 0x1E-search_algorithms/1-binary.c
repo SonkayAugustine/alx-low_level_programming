@@ -1,55 +1,71 @@
 #include "search_algos.h"
 
 /**
- * print_array - prints an array of integers
- * @array: array to print
- * @size: size of the array
+ * binary_search - A function that searches for a value in a
+ * sorted array of integers using the Binary search algorithm
+ * @array: the array to be searched
+ * @size: the length of the array
+ * @value: the value to be searched
  *
- * return: void
- */
-void print_array(int *array, size_t size)
-{
-size_t s;
-
-printf("Searching in array:");
-for (s = 0; s < size; s++)
-{
-printf(" %d", array[s]);
-if (s != size - 1)
-printf(",");
-}
-printf("\n");
-}
-
-/**
- * binary_search - searches for a value in a sroted array of integers
- * using the binary search algorithm
- * @array: pointer to the first element of the array to search in
- * @size: number of elements in array
- * @value: value to search for
- *
- * Return: index where value is located, otherwise -1 on failure
+ * Return: the index of the value in the array. Otherwise the array
+ * is NULL, return -1
  */
 int binary_search(int *array, size_t size, int value)
 {
-size_t l, m, r;
+	int lower_bound = 0;
+	int top_bound = (int)size - 1;
 
-if (array != NULL && size > 0)
-{
-l = 0;
-r = size - 1;
-print_array(array + l, r + 1 - l);
-while (l < r)
-{
-m = (l + r) / 2;
-if (array[m] < value)
-l = m + 1;
-else if (array[m] > value)
-r = m;
-else
-return (m);
-print_array(array + l, r + 1 - l);
+	if (array == NULL)
+		return (-1);
+
+	if (size == 0)
+		return (-1);
+
+	return (find_binary_search(array, lower_bound, top_bound, value));
 }
+
+/**
+ * find_binary_search - finds the values in the left and right parts
+ * of the array
+ * @array: the array to be searched
+ * @left: the left side of the array
+ * @right: the right side of the array
+ * @i: the value
+ *
+ * Return: the binary search values if otherwise, -1
+ */
+int find_binary_search(int *array, int left, int right, int i)
+{
+	if (left <= right)
+	{
+		int mid = left + (right - left) / 2;
+
+		print_array(array, left, right);
+
+		if (array[mid] == i)
+			return (mid);
+		if (array[mid] > i)
+			return (find_binary_search(array, left, mid - 1, i));
+		return (find_binary_search(array, mid + 1, right, i));
+	}
+
+	return (-1);
 }
-return (-1);
+
+/**
+ * print_array - prints the array
+ * @array: the array
+ * @left: the left part of the array
+ * @right: the right side of the array
+ */
+void print_array(int *array, int left, int right)
+{
+	printf("Searching in array: ");
+
+	for (; left < right; left += 1)
+	{
+		printf("%d, ", array[left]);
+	}
+
+	printf("%d\n", array[right]);
 }
