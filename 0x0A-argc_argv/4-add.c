@@ -9,24 +9,27 @@
  *
  * Return: 0 otherwise 1
  */
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
-int a = 0, i, j;
-
-for (i = 1; i < argc; i++)
+int a = 0;
+int i = 1, j;
+if (argc < 2)
 {
-for (j = 0; argv[i][j]; j++)
+printf("0\n");
+return (0);
+}
+while (i < argc)
 {
-if (isdigit(argv[i][j] == 0))
+for (j = 0; argv[i][j] != '\0'; j++)
 {
-puts("Error");
-return (1);
+if (argv[i][j] < '0' || argv[i][j] > '9')
+{
+printf("Error\n");
+return (0);
 }
 }
-}
-for (i = 1; i < argc; i++)
-{
-a += atoi(argv[i]);
+a = a + atoi(argv[i]);
+i++;
 }
 printf("%d\n", a);
 return (0);
