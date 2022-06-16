@@ -1,20 +1,17 @@
 #include "holberton.h"
 #include <stdlib.h>
-#include <stdio.h>
-#include <limits.h>
-
 /**
- * malloc_checked - allocates memory using malloc
- * @b: size of malloc
- *
- * Return: void pointer to malloc
- */
+  * malloc_checked - allocates memory using malloc
+  * @b: unsigned int
+  * Return: pointer to nwely allocated memory
+  */
+
 void *malloc_checked(unsigned int b)
 {
-void *p;
-p = malloc(b);
+	void  *p = malloc(b);
 
-if (p == NULL)
-exit(98);
-return (p);
+	if (p == NULL)
+		exit(98);
+
+	return (p);
 }
